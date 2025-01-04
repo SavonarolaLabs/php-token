@@ -118,9 +118,7 @@
 <div
 	bind:this={container}
 	style="
-		position: absolute;
-		left: 20px;
-		top: 50%;
+
 		width: 300px;
 		height: 300px;
 		background: transparent;

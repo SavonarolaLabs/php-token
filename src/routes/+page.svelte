@@ -4,6 +4,7 @@
 	import * as d3 from 'd3';
 	import { csvParse } from 'd3-dsv';
 	import GoldNugget from '$lib/GoldNugget.svelte';
+	import { GithubIcon, SendIcon } from 'lucide-svelte';
 
 	let container: HTMLDivElement;
 
@@ -61,78 +62,103 @@
 ></div>
 
 <!-- Page content -->
-<main
-	style="position: relative; z-index: 2; padding: 20px; color: white; text-align: center;"
-></main>
-<GoldNugget />
-<h1 class="squids absolute bottom-0 left-0 p-3 text-9xl text-white">PHP TOKEN</h1>
+<div class="flex w-full items-center justify-between p-5">
+	<div class="flex justify-center gap-2 text-yellow-400">
+		<img src="nugget.png" alt="" style="width:50px" />
+		<div class="squids text-4xl">PHP</div>
+	</div>
+	<div class="flex gap-4 pr-4 text-slate-400">
+		<a
+			href="https://github.com/CometCommunity"
+			aria-label="GitHub"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="transition-colors hover:text-yellow-400"
+		>
+			<GithubIcon class="h-6 w-6" />
+		</a>
+		<a
+			href="https://t.me/sig_mining/34398"
+			aria-label="Telegram"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="transition-colors hover:text-yellow-400"
+		>
+			<SendIcon class="h-6 w-6" />
+		</a>
+	</div>
+</div>
 
-<!-- <main style="position: relative; z-index: 2; padding: 20px; color: white; text-align: center;">
-	<h1 class="space-age text-9xl">PHP TOKEN ORIGIN STORY</h1>
+<div class="absolute text-white" style="right:20px;width:300px;">
+	<div style=" border-bottom:0.5px solid gray" class="text-slate-500">
+		Generation Wealth Demurraged
+	</div>
+	<div class="text-xs text-slate-600">
+		In the early years of the blockchain boom, a curious token emerged—a relic of wealth, ambition,
+		and mystery. The PHP token, minted on June 20, 2020, was no ordinary cryptocurrency. It
+		originated from a fabled discovery: a gold-laden asteroid dubbed "PHP," found drifting in the
+		outer reaches of the asteroid belt. Legend has it that the asteroid's dazzling veins of gold not
+		only captivated the imaginations of miners but also rewrote the meaning of generational wealth.
+		The PHP asteroid's significance was enshrined in its tokenization. A billion PHP tokens were
+		created, each representing a fractional claim to the asteroid’s immense mineral wealth. The
+		owner, an enigmatic figure who briefly appeared on the blockchain radar, seemed destined for
+		untold fortune. But their journey was shrouded in intrigue—they disappeared soon after
+		transferring funds, leaving the PHP tokens orphaned in a wallet. As the years passed, the
+		tokens' ties to the asteroid gave rise to folklore. With no active steward, PHP tokens became
+		akin to buried treasure, their value fluctuating wildly as rumors of rediscovery ebbed and
+		flowed. By September 2024, storage rent mechanisms brought the legend of PHP back to the
+		forefront. The claimed box held only a whisper of its original promise, but whispers of the
+		asteroid's wealth reignited curiosity. The PHP lore persists as a modern myth—a digital echo of
+		humanity’s eternal pursuit of riches among the stars. The asteroid may remain out of reach, but
+		its legacy endures, immortalized in blockchain history as the gold asteroid that promised—and
+		still promises—generational wealth.
+	</div>
+</div>
 
-	<section style="margin-top: 30px;">
-		<h2 style="font-size: 2rem; text-transform: uppercase;">Mint Details</h2>
-		<p>
-			<strong>Original Mint:</strong> June 20<sup>th</sup>, 2020 (Block Height: 256436)<br />
-			<a href="#" style="color: #3cf; text-decoration: underline;">Mint Transaction</a><br />
-			<strong>Token ID:</strong>
-			<a href="#" style="color: #3cf; text-decoration: underline;">
-				34d449dc84a27d0f8fb2166d415a7223604f6426fb2d83ee099f2312182d575d
-			</a>
-		</p>
-	</section>
+<div class="absolute ml-5" style="bottom:200px;">
+	<div
+		class="font-mono text-sm text-green-500"
+		style="width:300px; border-bottom: 0.5px solid white"
+	>
+		<div class="flex gap-2">
+			<div class="w-100">R4:</div>
+			<div>PHP</div>
+		</div>
+		<div class="flex gap-2">
+			<div class="w-100">R5:</div>
+			<div>Philippine Pesos</div>
+		</div>
 
-	<section style="margin-top: 20px;">
-		<h2 style="font-size: 2rem; text-transform: uppercase;">Token Information</h2>
-		<p>
-			<strong>1 Billion PHP Tokens Created</strong><br />
-			<strong>Registers:</strong><br />
-			R4 = “PHP”<br />
-			R5 = Philippine Pesos<br />
-			R6 = 8 (decimals)
-		</p>
-	</section>
+		<br />
 
-	<section style="margin-top: 20px;">
-		<h2 style="font-size: 2rem; text-transform: uppercase;">Wallet Observations</h2>
-		<p>
-			Owner (AFK?)<br />
-			- Purchased/transferred ERG from Hotbit (CEX) on June 17, 2020<br />
-			- Created PHP Token on June 20, 2020<br />
-			- Sent ERG back to Hotbit on August 29<sup>th</sup><br />
-			- AFK wallet, leaving PHP behind without sufficient ERG to cover rent payment.
-		</p>
-	</section>
+		<div class="flex justify-between">
+			<div class="w-100">created:</div>
+			<div>June 20<sup>th</sup>, 2020</div>
+		</div>
+		<div class="flex justify-between">
+			<div class="w-100">demurraged:</div>
+			<div>September 20<sup>th</sup>, 2024</div>
+		</div>
+		<div class="mt-2 flex justify-between" style="height:5px;">
+			<div style="border-left:0.5px solid white;"></div>
+			<div style="border-left:0.5px solid white;"></div>
+		</div>
+	</div>
 
-	<section style="margin-top: 30px;">
-		<h2 style="font-size: 2rem; text-transform: uppercase;">Storage Rent Claim</h2>
-		<p>
-			<strong>Date:</strong> September 20<sup>th</sup>, 2024<br />
-			<strong>Transaction ID:</strong>
-			<a href="#" style="color: #3cf; text-decoration: underline;">
-				0a9bba72293377aee6989204c709da76011e3c26273325465cae9186dbb6df80
-			</a>
-		</p>
-		<p>
-			<strong>Details:</strong><br />
-			1. PHP Box contained 0.0011 ERG and PHP Token. Insufficient ERG, entire box claimed.<br />
-			2. Another Wallet had 956.18151291 ERG, thus 0.1 ERG rent was claimed.
-		</p>
-	</section>
+	<div class="h-20">
+		<div class="h-full" style="border-left:0.5px solid white;margin-left:150px;"></div>
+	</div>
+	<GoldNugget />
+</div>
 
-	<section style="margin-top: 30px;">
-		<h2 style="font-size: 2rem; text-transform: uppercase;">Storage Rent FAQs</h2>
-		<p>
-			<strong>Purpose:</strong> Storage rent incentivizes active participation by charging a small fee every 4 years for unspent UTXOs.<br />
-			<strong>Fee:</strong> 0.14 ERG every 4 years per box. If insufficient funds, miners can claim other assets.<br />
-			<strong>Solution:</strong> Consolidate using a mobile wallet or Nautilus.
-		</p>
-	</section>
-
-	<img src="/Ergonaut.png" alt="Ergonaut" style="margin-top: 20px; max-width: 100px; display: block; margin-left: auto; margin-right: auto;" />
-</main> -->
+<h1 class="squids absolute bottom-0 left-0 p-3 text-9xl text-slate-700">PHP TOKEN</h1>
 
 <style>
+	.w-100 {
+		width: 97px;
+		text-align: right;
+	}
+
 	@font-face {
 		font-family: 'Space Age';
 		src: url('/fonts/space-age.ttf') format('truetype');
