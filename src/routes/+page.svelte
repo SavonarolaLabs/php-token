@@ -69,7 +69,7 @@
 	</div>
 	<div class="flex gap-4 pr-4 text-slate-400">
 		<a
-			href="https://github.com/CometCommunity"
+			href="https://github.com/SavonarolaLabs/php-token"
 			aria-label="GitHub"
 			target="_blank"
 			rel="noopener noreferrer"
