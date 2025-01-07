@@ -91,7 +91,7 @@
 
 <div class="absolute text-white" style="right:20px;width:300px;">
 	<div style=" border-bottom:0.5px solid gray" class="text-slate-500">
-		Generation Wealth Demurraged
+		Generational Wealth Demurraged
 	</div>
 	<div class="text-xs text-slate-600">
 		In the early years of the blockchain boom, a curious token emerged—a relic of wealth, ambition,
@@ -112,6 +112,13 @@
 		humanity’s eternal pursuit of riches among the stars. The asteroid may remain out of reach, but
 		its legacy endures, immortalized in blockchain history as the gold asteroid that promised—and
 		still promises—generational wealth.
+	</div>
+	<div class="mt-4">
+		<a
+			class="scifi-button text-center"
+			href="https://dex.mewfinance.com/ergo/swap?base=0000000000000000000000000000000000000000000000000000000000000000&quote=34d449dc84a27d0f8fb2166d415a7223604f6426fb2d83ee099f2312182d575d&initialPoolId=d5077d8991925e30077a73eef3db94191de1b1c1605c3ed0e66ce809ae4bc6d9"
+			>SWAP</a
+		>
 	</div>
 </div>
 
@@ -154,6 +161,52 @@
 <h1 class="squids absolute bottom-0 left-0 p-3 text-9xl text-slate-700">PHP TOKEN</h1>
 
 <style>
+	.scifi-button {
+		display: block;
+		position: relative;
+		font-size: 20px;
+		line-height: 1em;
+		text-transform: uppercase;
+		background: rgba(6, 33, 60, 0.8);
+		padding: 10px 18px;
+		text-decoration: none;
+		color: #fff;
+		border-radius: 0;
+		overflow: hidden;
+		transition: all 0.6s cubic-bezier(0.05, 3, 1, 1);
+	}
+
+	.scifi-button:after,
+	.scifi-button:before {
+		content: '';
+		display: block;
+		position: absolute;
+		border: 2px solid #49839900;
+		width: 10px;
+		top: 0;
+		bottom: 0;
+		transition: all 0.6s cubic-bezier(0.05, 3, 1, 1);
+	}
+
+	.scifi-button:before {
+		border-right: 0;
+		left: 0;
+	}
+
+	.scifi-button:after {
+		border-left: 0;
+		right: 0;
+	}
+
+	.scifi-button:hover {
+		background: rgba(6, 33, 60, 0.4);
+	}
+
+	.scifi-button:hover:after,
+	.scifi-button:hover:before {
+		border-color: #1ae3de #498399;
+	}
+
 	.w-100 {
 		width: 97px;
 		text-align: right;
